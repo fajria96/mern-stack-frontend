@@ -15,8 +15,8 @@ const App = () => {
         <ToastContainer position='top-center'/>
         <Switch>
           <Route path="/" exact children={() => <Home />} />
-          <Route path="/detail" children={() => <Detail />} />
-          <Route path="/edit" children={() => <Edit />} />
+          <Route path='/detail/:empid' children={ <Detail />} />
+          <Route path="/edit/:empid" children={ <Edit />} />
           <Route path="/tambah" children={() => <Tambah />} />
         </Switch>
       </BrowserRouter>
